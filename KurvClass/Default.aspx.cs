@@ -25,14 +25,7 @@ namespace KurvClass
                 Convert.ToDecimal(TB_price.Text),
                 Convert.ToInt32(TB_amount.Text)
             );
-            ShowCart(cart.Items);
+            CartViewController.Refresh();
         }
-         
-        private void ShowCart(List<CartProduct> cart)
-        {
-            GV_cart.DataSource = cart;
-            GV_cart.DataBind();
-        }
-        
     }
 }

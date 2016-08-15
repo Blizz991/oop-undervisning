@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="KurvClass.Default" %>
 
+<%@ Register Src="~/CartView.ascx" TagPrefix="uc1" TagName="CartView" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -36,7 +39,7 @@
             </tr>
         </table>
         <h1>Indkøbskurv</h1>
-        <asp:GridView ID="GV_cart" runat="server"></asp:GridView>
+        <uc1:CartView ID="CartViewController" runat="server" />
     </div>
     </form>
 </body>
